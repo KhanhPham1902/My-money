@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="month_list">
+        <item>Hiện tại</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="year_list">
+        <item>Hiện tại</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+        <item>2029</item>
+        <item>2030</item>
+        <item>2031</item>
+        <item>2032</item>
+        <item>2033</item>
+        <item>2034</item>
+        <item>2035</item>
+        <item>2036</item>
+        <item>2037</item>
+        <item>2038</item>
+        <item>2039</item>
+        <item>2040</item>
+        <item>2041</item>
+        <item>2042</item>
+        <item>2043</item>
+        <item>2044</item>
+        <item>2045</item>
+        <item>2046</item>
+        <item>2047</item>
+        <item>2048</item>
+        <item>2049</item>
+        <item>2050</item>
+    </string-array>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:theme="@style/Theme.Material3.Light.NoActionBar"
+    android:background="@drawable/custom_edt"
+    android:backgroundTint="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/layoutMonth"
+            android:hint="Chọn tháng"
+            android:background="@drawable/custom_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            app:boxCornerRadiusBottomEnd="10sp"
+            app:boxCornerRadiusBottomStart="10sp"
+            app:boxCornerRadiusTopEnd="10sp"
+            app:boxCornerRadiusTopStart="10sp"
+            app:boxStrokeWidth="0sp"
+            app:boxStrokeWidthFocused="0sp">
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/inputMonth"
+                android:inputType="none"
+                android:textStyle="bold"
+                app:simpleItems="@array/month_list"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray"
+            android:layout_marginHorizontal="5dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/layoutYear"
+            android:hint="Chọn năm"
+            android:background="@drawable/custom_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            app:boxCornerRadiusBottomEnd="10sp"
+            app:boxCornerRadiusBottomStart="10sp"
+            app:boxCornerRadiusTopEnd="10sp"
+            app:boxCornerRadiusTopStart="10sp"
+            app:boxStrokeWidth="0sp"
+            app:boxStrokeWidthFocused="0sp">
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/inputYear"
+                android:textStyle="bold"
+                android:inputType="none"
+                app:simpleItems="@array/year_list"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>
